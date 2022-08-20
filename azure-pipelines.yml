@@ -14,5 +14,9 @@ resources:
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- bash: echo "I was triggered by pipecontainer2 pipeline after RunInContainerStage completed successfully"
+stages:
+- stage: triggered_pipeline_stage
+  jobs:
+  - job: triggered_pipeline_job
+      steps:
+      - bash: echo "I was triggered by pipecontainer2 pipeline after RunInContainerStage completed successfully"
