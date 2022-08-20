@@ -19,4 +19,5 @@ stages:
   jobs:
   - job: triggered_pipeline_job
       steps:
-      - bash: echo "I was triggered by pipecontainer2 pipeline after RunInContainerStage completed successfully"
+      - script: |
+         echo "I was triggered by pipecontainer2 pipeline after RunInContainerStage completed successfully"
