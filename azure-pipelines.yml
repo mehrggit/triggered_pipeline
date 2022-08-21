@@ -22,4 +22,5 @@ stages:
   - job: triggered_pipeline_job
     steps:
     - script: echo was triggered
+    - script: echo should not run
     - script: env | grep -i reason
