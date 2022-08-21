@@ -20,3 +20,4 @@ stages:
   - job: triggered_pipeline_job
     steps:
     - script: echo was triggered
+    - script: env | grep -i reason
